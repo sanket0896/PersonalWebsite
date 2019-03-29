@@ -14,7 +14,10 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #345678;
+    background: #151326;
+    color: #FF8552;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5rem;
 `;
 
 export default ({ children }) =>

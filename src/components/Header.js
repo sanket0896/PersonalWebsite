@@ -7,7 +7,6 @@ const Container = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: #f342e1;
     top: 0;
     left: 0;
     height: 10%;
@@ -23,13 +22,12 @@ const HeaderSegment = styled.div`
 `;
 
 const HeaderSegmentLeft = styled(HeaderSegment)`
+font-size: 1.75rem;
     width: 25%;
-    font-size: 1.5rem;
 `;
 
 const HeaderSegmentRight = styled(HeaderSegment)`
     width: 35%;
-    font-size: 1rem;
 `;
 
 const HeaderChild = styled.div`
