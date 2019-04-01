@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import { FiGithub, FiLinkedin, FiTwitter, FiInstagram } from "react-icons/fi";
+import { NavAnchor } from "./ReactComponentHub";
+
 
 const Container = styled.div`
     position: absolute;
@@ -16,13 +18,13 @@ const Container = styled.div`
     padding: 0 40%;
 `;
 
-const FooterChild = styled.div`
+const FooterChild = styled(NavAnchor)`
 `;
 
 export default () => 
 <Container>
-    <FooterChild><FiGithub /></FooterChild>
-    <FooterChild><FiLinkedin /></FooterChild>
-    <FooterChild><FiTwitter /></FooterChild>
-    <FooterChild><FiInstagram /></FooterChild>
+    <FooterChild href="https://github.com/sanket0896" newTab="true"><FiGithub /></FooterChild>
+    <FooterChild href="#"><FiLinkedin /></FooterChild>
+    <FooterChild href="#"><FiTwitter /></FooterChild>
+    <FooterChild href="#"><FiInstagram /></FooterChild>
 </Container>

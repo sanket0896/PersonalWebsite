@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { UndecoratedLink } from "./StyledComponentHub";
+
 
 const Container = styled.div`
     position: absolute;
@@ -30,16 +32,17 @@ const HeaderSegmentRight = styled(HeaderSegment)`
     width: 35%;
 `;
 
-const HeaderChild = styled.div`
-
+const HeaderChild = styled(UndecoratedLink)`
 `;
 
 export default () =>  
     <Container>
-        <HeaderSegmentLeft>Sanket Mishra</HeaderSegmentLeft>
+        <HeaderSegmentLeft>
+            <HeaderChild to="/">Sanket Mishra</HeaderChild>
+        </HeaderSegmentLeft>
         <HeaderSegmentRight>
-            <HeaderChild>Work</HeaderChild>
-            <HeaderChild>Life</HeaderChild>
-            <HeaderChild>Contact</HeaderChild>
+            <HeaderChild to="/work">Work</HeaderChild>
+            <HeaderChild to="/life">Life</HeaderChild>
+            <HeaderChild to="/contact">Contact</HeaderChild>
         </HeaderSegmentRight>
     </Container>
