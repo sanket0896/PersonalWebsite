@@ -1,14 +1,37 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { ContentCenter, HugeText, ChangingColor } from "../components/StyledComponentHub";
+import styled from "styled-components";
+
+import Card from "../components/Card";
+
+import hu from "../images/marion-michele-1481926-unsplash.jpg"
+
+const cardDetails = [
+    {
+        imageUrl: hu,
+        title: `New Card`,
+        description: `I am a fullstack developer from India. I love building fast, responsive and complex stuff.
+        I look forward to havin `,
+        tags: [
+            `React`,
+            `Javascript`,
+            `Redux`,
+            `Gatsby`,
+            `Java`,
+            `Angular`
+        ],
+        siteLink: `#`
+    }
+];
+
+export const CardContainer = styled.div`
+    background: black;
+    min-height: 100px;
+    min-width: 100px;
+    position: relative;
+`;
 
 export default () => 
 <Layout>
-    <ContentCenter>
-        <HugeText>Hi! I am <ChangingColor>Work</ChangingColor></HugeText><br/>
-        I am a fullstack developer from India. I love building fast, responsive and complex stuff.
-        I look forward to having a great life and making everyone happy.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, porro quasi eveniet praesentium dolores accusamus corrupti, 
-        officia tempore dolore dicta voluptas est. Quod sint facilis id exercitationem itaque est magni.
-    </ContentCenter>
+    <Card details={cardDetails[0]} />
 </Layout>

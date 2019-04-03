@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { UndecoratedLink } from "./StyledComponentHub";
+import { UndecoratedLink_SC } from "./StyledComponentHub";
 
 
 const Container = styled.div`
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,6 +14,7 @@ const Container = styled.div`
     height: 10%;
     width: 100%;
     padding: 0 5rem;
+    background: #151326;
 `;
 
 const HeaderSegment = styled.div`
@@ -32,7 +33,7 @@ const HeaderSegmentRight = styled(HeaderSegment)`
     width: 35%;
 `;
 
-const HeaderChild = styled(UndecoratedLink)`
+const HeaderChild = styled(UndecoratedLink_SC)`
 `;
 
 export default () =>  
@@ -42,7 +43,6 @@ export default () =>
         </HeaderSegmentLeft>
         <HeaderSegmentRight>
             <HeaderChild to="/work">Work</HeaderChild>
-            <HeaderChild to="/life">Life</HeaderChild>
             <HeaderChild to="/contact">Contact</HeaderChild>
         </HeaderSegmentRight>
     </Container>

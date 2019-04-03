@@ -10,18 +10,30 @@ const Container = styled.div`
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background: #151326;
     color: #FF8552;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.5rem;
+    overflow-y: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+`;
+
+const FadeIn = styled.div`
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    bottom: 7%;
+    left: 0;
+    background-image: linear-gradient(to bottom, transparent, #151326);
 `;
 
 export default ({ children }) =>
 <Container>
     <Header />
     {children}
+    <FadeIn />
     <Footer />
 </Container>

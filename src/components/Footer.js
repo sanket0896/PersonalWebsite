@@ -6,16 +6,20 @@ import { NavAnchor } from "./ReactComponentHub";
 
 
 const Container = styled.div`
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     bottom: 0;
     left: 0;
-    height: 15%;
+    height: 7%;
     width: 100%;
     padding: 0 40%;
+    background: #151326;
+    // background-image: linear-gradient(to bottom, transparent, #151326);
+
+    // box-shadow: 0 0 0 0 #151326;
 `;
 
 const FooterChild = styled(NavAnchor)`
