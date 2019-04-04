@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { NavAnchor } from "./ReactComponentHub";
 
 const CardContainer = styled.div`
     min-height: 10%;
@@ -60,7 +59,9 @@ const CardTags = styled.div`
     font-weight: bold;
 `;
 
-const CardActionButton = styled(NavAnchor)`
+const CardActionButton = styled.a`
+    text-decoration: none;
+    color: inherit;
     display: block;
     display: flex;
     align-items: center;

@@ -24,3 +24,7 @@ export const UndecoratedAnchor_SC = styled.a`
     color: inherit;
     text-decoration: none;
 `;
+
+export const HideOverflow_SC = styled.div`
+    overflow: hidden;
+`;

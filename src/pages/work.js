@@ -21,6 +21,30 @@ const cardDetails = [
             `Angular`
         ],
         siteLink: `#`
+    },
+    {
+        imageUrl: hu,
+        title: `New Card`,
+        description: `I am a fullstack developer from India. I love building fast, responsive and complex stuff.
+        I look forward to havin `,
+        tags: [
+            `React`,
+            `Javascript`,
+        ],
+        siteLink: `#`
+    },
+    {
+        imageUrl: hu,
+        title: `New Card`,
+        description: `I am a fullstack developer from India. I love building fast, responsive and complex stuff.
+        I look forward to havin `,
+        tags: [
+            `React`,
+            `Gatsby`,
+            `Java`,
+            `Angular`
+        ],
+        siteLink: `#`
     }
 ];
 
@@ -33,5 +57,5 @@ export const CardContainer = styled.div`
 
 export default () => 
 <Layout>
-    <Card details={cardDetails[0]} />
+    { cardDetails.map(card => <Card cardDetails={card} />) }
 </Layout>
