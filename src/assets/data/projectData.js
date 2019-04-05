@@ -1,4 +1,4 @@
-import hu from "../images/marion-michele-1481926-unsplash.jpg";
+// import hu from "../images/marion-michele-1481926-unsplash.jpg";
 
 // {
 //     imageUrl: hu,
