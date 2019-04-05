@@ -28,7 +28,7 @@ const FooterChild = styled(NavAnchor)`
 export default () => 
 <Container>
     <FooterChild href="https://github.com/sanket0896" newTab="true"><FiGithub /></FooterChild>
-    <FooterChild href="#"><FiLinkedin /></FooterChild>
-    <FooterChild href="#"><FiTwitter /></FooterChild>
-    <FooterChild href="#"><FiInstagram /></FooterChild>
+    <FooterChild href="https://www.linkedin.com/in/sanket-mishra/" newTab="true"><FiLinkedin /></FooterChild>
+    <FooterChild href="https://twitter.com/sanket14mishra" newTab="true"><FiTwitter /></FooterChild>
+    <FooterChild href="https://www.instagram.com/imsanketmishra/" newTab="true"><FiInstagram /></FooterChild>
 </Container>

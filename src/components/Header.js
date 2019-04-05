@@ -43,6 +43,5 @@ export default () =>
         </HeaderSegmentLeft>
         <HeaderSegmentRight>
             <HeaderChild to="/work">Work</HeaderChild>
-            <HeaderChild to="/contact">Contact</HeaderChild>
         </HeaderSegmentRight>
     </Container>
