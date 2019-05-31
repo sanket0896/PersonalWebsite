@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import styled from "styled-components";
 
 import Card from "../components/Card";
-import cardData from "../assets/data/projectData"
+import { projectData as cardData } from "../assets/data/projectData"
 
 export const CardContainer = styled.div`
     background: black;

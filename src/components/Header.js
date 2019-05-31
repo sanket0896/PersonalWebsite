@@ -42,6 +42,6 @@ export default () =>
             <HeaderChild to="/">Sanket Mishra</HeaderChild>
         </HeaderSegmentLeft>
         <HeaderSegmentRight>
-            <HeaderChild to="/work">Work</HeaderChild>
+            {/* <HeaderChild to="/work">Work</HeaderChild> */}
         </HeaderSegmentRight>
     </Container>
