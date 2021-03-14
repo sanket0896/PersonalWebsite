@@ -1,21 +1,23 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { BlogComponent } from "./blog/blog.component";
-import { LandingComponent } from "./landing/landing.component";
-import { ProjectsComponent } from "./projects/projects.component";
 
 const routes: Routes = [
   {
     path: "",
-    component: LandingComponent,
+    pathMatch: "full",
+    loadChildren: () =>
+      import("./landing/landing.module").then(m => m.LandingModule),
   },
   {
     path: "projects",
-    component: ProjectsComponent,
+    loadChildren: () =>
+      import("./projects/projects.module").then(m => m.ProjectsModule),
   },
   {
     path: "blog",
     component: BlogComponent,
+    loadChildren: () => import("./blog/blog.module").then(m => m.BlogModule),
   },
 ];
 
