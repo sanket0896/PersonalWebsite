@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

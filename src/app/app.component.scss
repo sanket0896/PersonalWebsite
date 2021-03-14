@@ -1,0 +1,27 @@
+:host {
+  --spacing-s1: 1rem;
+  --spacing-s2: calc(var(--spacing-s1) * 2);
+
+  --font-family: Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console",
+    monospace;
+  --font-size-small: 14px;
+  --font-size-normal: 16px;
+  --font-size-large: 18px;
+  --font-size-super-large: 40px;
+  --font-line-height: 1.1;
+
+  --color-black: #000000;
+}
+
+:host {
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  line-height: var(--font-line-height);
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: var(--spacing-s1);
+}
