@@ -25,3 +25,19 @@ body {
     outline: none;
   }
 }
+
+.border-bottom-reveal {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: calc(-1 * var(--spacing-s1-half));
+    width: 0;
+    border-bottom: 3px solid black;
+    transition: all 0.2s linear;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

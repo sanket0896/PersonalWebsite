@@ -1,0 +1,9 @@
+<div class="card">
+    <app-simple-link> 
+        <div class="title border-bottom-reveal">{{heading}}</div> 
+    </app-simple-link>
+    <div class="description">{{body}}</div>
+    <div class="tags">
+        <app-simple-tag class="tag" *ngFor="let tag of tags" [tag]="tag"></app-simple-tag>
+    </div>
+</div>

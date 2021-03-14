@@ -1,0 +1,16 @@
+:host {
+  --content-width: 100%;
+  --align-text: var(--align-text);
+  width: 100%;
+  display: flex;
+  justify-content: var(--align-content);
+}
+.parent {
+  width: 100%;
+}
+.entry {
+  display: flex;
+  flex-direction: column;
+  width: var(--content-width);
+  text-align: var(--align-text);
+}

@@ -1,8 +1,10 @@
 :host {
   // Spacing Variables
   --spacing-s1: 1rem;
+  --spacing-s1-half: calc(var(--spacing-s1) * 0.5);
   --spacing-s2: calc(var(--spacing-s1) * 2);
   --spacing-s3: calc(var(--spacing-s1) * 3);
+  --spacing-s10: calc(var(--spacing-s1) * 10);
 
   // Font Variables
   --font-family: Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console",
@@ -11,6 +13,7 @@
   --font-size-small: 14px;
   --font-size-normal: 16px;
   --font-size-large: 18px;
+  --font-size-xl: 25px;
   --font-size-super-large: 40px;
 
   --font-line-height: 1.1;

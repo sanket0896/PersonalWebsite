@@ -1,4 +1,6 @@
-export const SOCIAL_LINKS = [
+import { SocialLink } from "../models/link";
+
+export const SOCIAL_LINKS: SocialLink[] = [
   {
     text: "Github",
     link: "https://github.com/sanket0896",
