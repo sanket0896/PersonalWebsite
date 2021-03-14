@@ -1,13 +1,35 @@
 :host {
   --logo-height: 100px;
   --logo-width: 100px;
+  --logo-bg-padding: var(--spacing-s1);
+  --logo-bg-color: var(--color-yellow);
+  --logo-text-weight: var(--font-weight-bold);
 }
 
 .logo {
-  height: var(--logo-height);
-  width: var(--logo-width);
-  background: url("/assets/face.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img-container {
+  padding: var(--logo-bg-padding);
+  background-color: var(--logo-bg-color);
+  border-radius: 50%;
+
+  .logo-img {
+    height: var(--logo-height);
+    width: var(--logo-width);
+    background: url("/assets/face.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+}
+
+.name {
+  margin-top: calc(0.5 * var(--spacing-s1));
+  font-weight: var(--logo-text-weight);
+  font-size: var(--font-size-small);
 }

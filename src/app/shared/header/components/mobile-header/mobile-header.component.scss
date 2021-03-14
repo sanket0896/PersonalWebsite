@@ -1,0 +1,26 @@
+:host {
+  // position: fixed;
+  // top: var(--spacing-s1);
+  width: calc(100% - 2 * var(--spacing-s1));
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .nav-link {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  app-logo {
+    --logo-height: 50px;
+    --logo-width: 50px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .footer {
+    display: none;
+  }
+}

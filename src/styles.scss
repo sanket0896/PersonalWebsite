@@ -15,3 +15,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.no-outline {
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:visited {
+    outline: none;
+  }
+}
