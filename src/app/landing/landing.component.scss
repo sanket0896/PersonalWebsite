@@ -20,4 +20,11 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.3;
   }
+
+  .social-links {
+    margin-top: var(--spacing-s2);
+    .link {
+      margin-right: calc(2 * var(--spacing-s2));
+    }
+  }
 }
