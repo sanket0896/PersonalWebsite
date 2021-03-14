@@ -1,7 +1,5 @@
 :host {
-  // position: fixed;
-  // top: var(--spacing-s1);
-  width: calc(100% - 2 * var(--spacing-s1));
+  width: calc(100% - var(--spacing-s2));
 }
 .footer {
   display: flex;

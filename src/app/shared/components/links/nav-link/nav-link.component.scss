@@ -8,7 +8,7 @@
     border-bottom: 3px solid var(--color-black);
     width: 0;
     position: absolute;
-    bottom: calc(-0.5 * var(--spacing-s1));
+    bottom: calc(-1 * var(--spacing-s1-half));
     left: 0;
     transition: all 0.2s linear;
   }
