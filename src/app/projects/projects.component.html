@@ -1,7 +1,8 @@
 <div class="projects-container">
-    <app-project-entry 
-      *ngFor="let project of projectList; odd as odd"
-      [class.align-right]="odd"
-      [project]="project">
-    </app-project-entry>
+  <app-project-entry
+    *ngFor="let project of projectList; odd as odd"
+    [class.align-right]="odd"
+    [project]="project"
+  >
+  </app-project-entry>
 </div>
