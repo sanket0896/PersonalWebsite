@@ -1,1 +1,6 @@
-<span class="simple-tag">{{tag.name}}</span>
+<span class="simple-tag">
+  <ng-container *ngIf="tag?.name; else contentTag">{{ tag.name }}</ng-container>
+  <ng-template #contentTag>
+    <ng-content></ng-content>
+  </ng-template>
+</span>

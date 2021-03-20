@@ -5,5 +5,6 @@ export interface ProjectDetail {
 }
 
 export interface TagBase {
-  name: string;
+  name?: string;
+  color?: string;
 }

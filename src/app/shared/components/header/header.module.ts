@@ -5,6 +5,7 @@ import { MobileHeaderComponent } from "./components/mobile-header/mobile-header.
 import { DesktopHeaderComponent } from "./components/desktop-header/desktop-header.component";
 import { LogoModule } from "../logo/logo.module";
 import { LinksModule } from "../links/links.module";
+import { RouterModule } from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { LinksModule } from "../links/links.module";
     MobileHeaderComponent,
     DesktopHeaderComponent,
   ],
-  imports: [CommonModule, LogoModule, LinksModule],
+  imports: [CommonModule, LogoModule, LinksModule, RouterModule],
   exports: [HeaderComponent],
 })
 export class HeaderModule {}
