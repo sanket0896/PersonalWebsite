@@ -1,0 +1,8 @@
+<div class="entry">
+  <div class="date">{{ blog.creationDate | date: "mediumDate" }}</div>
+  <app-simple-card
+    [heading]="blog.title"
+    [body]="blog.description"
+    [tags]="blog.tags"
+  ></app-simple-card>
+</div>

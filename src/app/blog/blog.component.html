@@ -1,1 +1,4 @@
-<p>blog works!</p>
+<div class="blog-container centred-content-container">
+  <app-blog-entry *ngFor="let project of blogList" [blog]="project">
+  </app-blog-entry>
+</div>
