@@ -1,5 +1,5 @@
 import { Component, Input } from "@angular/core";
-import { TagBase } from "../../models/project";
+import { TagBase } from "../../models/tag";
 
 @Component({
   selector: "app-simple-tag",

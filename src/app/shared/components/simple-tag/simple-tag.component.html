@@ -1,4 +1,4 @@
-<span class="simple-tag">
+<span class="simple-tag" [style.background-color]="tag?.color || ''">
   <ng-container *ngIf="tag?.name; else contentTag">{{ tag.name }}</ng-container>
   <ng-template #contentTag>
     <ng-content></ng-content>
