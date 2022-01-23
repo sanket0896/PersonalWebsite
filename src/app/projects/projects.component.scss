@@ -4,11 +4,8 @@
 }
 
 .projects-container {
-  padding: var(--spacing-s3) var(--spacing-s10);
-
   app-project-entry {
     --content-width: 60%;
-    margin-bottom: calc(var(--spacing-s1) * 5);
 
     &.align-right {
       --align-content: flex-end;

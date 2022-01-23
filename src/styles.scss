@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  background-color: #fcf9f8;
 }
 .abs-center {
   display: flex;
@@ -40,4 +41,8 @@ body {
   &:hover::after {
     width: 100%;
   }
+}
+
+.centred-content-container {
+  padding: var(--spacing-s3) var(--spacing-s10);
 }
