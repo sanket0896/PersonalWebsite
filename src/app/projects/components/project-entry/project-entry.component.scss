@@ -4,7 +4,39 @@
   width: 100%;
   display: flex;
   justify-content: var(--align-content);
+  position: relative;
+
+  &::after {
+    content: "";
+    background: transparent;
+    position: absolute;
+    top: 0;
+    height: calc(100% - 1px);
+    width: 50%;
+    z-index: -1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 }
+
+:host(.align-right) {
+  &::after {
+    border-left: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    left: 0;
+  }
+}
+
+:host(:not(.align-right)) {
+  &::after {
+    border-right: 1px solid black;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    right: 0;
+  }
+}
+
 .parent {
   width: 100%;
 }
@@ -13,4 +45,6 @@
   flex-direction: column;
   width: var(--content-width);
   text-align: var(--align-text);
+  padding-bottom: var(--spacing-s3);
+  padding-top: var(--spacing-s3);
 }
