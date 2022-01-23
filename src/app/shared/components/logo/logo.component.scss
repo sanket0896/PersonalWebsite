@@ -17,6 +17,8 @@
   padding: var(--logo-bg-padding);
   background-color: var(--logo-bg-color);
   border-radius: 50%;
+  transition: background-color var(--theme-change-duration)
+    var(--theme-change-duration);
 
   .logo-img {
     height: var(--logo-height);

@@ -4,4 +4,6 @@
   border-radius: var(--spacing-s1-half);
   font-size: var(--font-size-small);
   color: var(--color-accent-inverse);
+  transition: color var(--theme-change-duration) var(--theme-change-easing),
+    background-color var(--theme-change-duration) var(--theme-change-duration);
 }

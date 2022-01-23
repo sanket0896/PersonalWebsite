@@ -36,6 +36,18 @@
   --dark-theme-secondary: #f1a17e;
   --dark-theme-accent: #eeb76b;
 
+  // Theme transition Variables
+  --theme-change-duration: 0.15s;
+  --theme-change-easing: linear;
+}
+
+:host {
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  line-height: var(--font-line-height);
+}
+
+@mixin light-color-theme {
   --color-background: var(--light-theme-background);
   --color-primary: var(--light-theme-primary);
   --color-secondary: var(--light-theme-secondary);
@@ -43,10 +55,12 @@
   --color-accent-inverse: var(--light-theme-primary);
 }
 
-:host {
-  font-family: var(--font-family);
-  font-size: var(--font-size-normal);
-  line-height: var(--font-line-height);
+@mixin dark-color-theme {
+  --color-background: var(--dark-theme-background);
+  --color-primary: var(--dark-theme-primary);
+  --color-secondary: var(--dark-theme-secondary);
+  --color-accent: var(--dark-theme-accent);
+  --color-accent-inverse: var(--dark-theme-background);
 }
 
 .app {
@@ -60,12 +74,15 @@
   background-color: var(--color-background);
   color: var(--color-primary);
 
+  transition: color var(--theme-change-duration) var(--theme-change-easing),
+    background-color var(--theme-change-duration) var(--theme-change-duration);
+
+  &[theme="theme-light"] {
+    @include light-color-theme();
+  }
+
   &[theme="theme-dark"] {
-    --color-background: var(--dark-theme-background);
-    --color-primary: var(--dark-theme-primary);
-    --color-secondary: var(--dark-theme-secondary);
-    --color-accent: var(--dark-theme-accent);
-    --color-accent-inverse: var(--dark-theme-background);
+    @include dark-color-theme();
   }
 }
 

@@ -33,6 +33,8 @@ body {
 }
 
 .border-bottom-reveal {
+  position: relative;
+
   &::after {
     content: "";
     position: absolute;

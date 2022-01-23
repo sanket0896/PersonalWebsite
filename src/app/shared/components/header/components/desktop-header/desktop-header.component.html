@@ -6,6 +6,8 @@
     <app-nav-link [link]="''">Home</app-nav-link>
     <app-nav-link [link]="'/projects'">Projects</app-nav-link>
     <app-nav-link [link]="'/blog'">Blog</app-nav-link>
-    <div (click)="toggleTheme()">Toggle Theme</div>
+    <div class="border-bottom-reveal" (click)="toggleTheme()">
+      {{ nextThemeName$ | async }} Mode
+    </div>
   </div>
 </div>
