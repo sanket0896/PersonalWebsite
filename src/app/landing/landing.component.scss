@@ -30,7 +30,7 @@
         margin-right: calc(2 * var(--spacing-s2));
 
         .link-text {
-          color: var(--color-black);
+          color: var(--color-accent-inverse);
           transition: all 0.2s linear;
 
           &:hover {

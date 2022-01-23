@@ -6,6 +6,7 @@
   &.link-active {
     &::after {
       width: 100%;
+      background: var(--color-accent);
     }
   }
 }

@@ -39,7 +39,7 @@ body {
     left: 0;
     bottom: calc(-1 * var(--spacing-s1-half));
     width: 0;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--color-secondary);
     transition: all 0.2s linear;
   }
 

@@ -23,8 +23,24 @@
   --font-weight-bold: 600;
 
   // Color Variables
-  --color-black: #000000;
-  --color-yellow: yellow;
+
+  // Light color theme : https://coolors.co/f5efed-140f2e-3f3d51-fff323
+  --light-theme-background: #f5efed;
+  --light-theme-primary: #140f2d;
+  --light-theme-secondary: #3f3d51;
+  --light-theme-accent: #fff323;
+
+  // Dark color theme : https://coolors.co/292929-fdf2ed-f1a17e-eeb76b
+  --dark-theme-background: #292929;
+  --dark-theme-primary: #fdf2ed;
+  --dark-theme-secondary: #f1a17e;
+  --dark-theme-accent: #eeb76b;
+
+  --color-background: var(--light-theme-background);
+  --color-primary: var(--light-theme-primary);
+  --color-secondary: var(--light-theme-secondary);
+  --color-accent: var(--light-theme-accent);
+  --color-accent-inverse: var(--light-theme-primary);
 }
 
 :host {
@@ -40,6 +56,17 @@
   padding: var(--spacing-s1) var(--spacing-s3);
   padding-right: 0;
   overflow: hidden;
+
+  background-color: var(--color-background);
+  color: var(--color-primary);
+
+  &[theme="theme-dark"] {
+    --color-background: var(--dark-theme-background);
+    --color-primary: var(--dark-theme-primary);
+    --color-secondary: var(--dark-theme-secondary);
+    --color-accent: var(--dark-theme-accent);
+    --color-accent-inverse: var(--dark-theme-background);
+  }
 }
 
 @media only screen and (max-width: 767px) {

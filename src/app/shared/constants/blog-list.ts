@@ -7,11 +7,7 @@ export const BLOG_LIST: BlogDetail[] = [
     typing indicator and read receipts`,
     creationDate: new Date("2021-11-08"),
     content: "Hello World!",
-    tags: [
-      { name: "React" },
-      { name: "ExpressJs", color: "#00A5CF" },
-      { name: "SocketIO" },
-    ],
+    tags: [{ name: "React" }, { name: "ExpressJs" }, { name: "SocketIO" }],
   },
   {
     title: "React Chat App Blog",
@@ -38,7 +34,7 @@ export const BLOG_LIST: BlogDetail[] = [
     tags: [
       { name: "React" },
       { name: "Redux" },
-      { name: "ExpressJs", color: "#00A5CF" },
+      { name: "ExpressJs" },
       { name: "SocketIO" },
     ],
   },

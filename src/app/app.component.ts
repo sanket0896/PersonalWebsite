@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { ThemeManagementService } from "./shared/services/theme-service/theme-management.service";
 
 @Component({
   selector: "app-root",
@@ -7,4 +8,7 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "PersonalWebsite";
+  theme$ = this.themeService.themeClass$;
+
+  constructor(private themeService: ThemeManagementService) {}
 }
