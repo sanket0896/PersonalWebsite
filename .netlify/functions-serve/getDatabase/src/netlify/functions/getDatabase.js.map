@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/spotdraft/Projects/PersonalWebsite/netlify/functions/getDatabase.ts"],
+  "sourceRoot": "/var/folders/d2/zmg9fp715gjg0qph1qvwy5hh0000gn/T/tmp-71405-fYmOw406Td73",
+  "sourcesContent": ["import { Handler } from \"@netlify/functions\";\n\nconst handler: Handler = async (event, context) => {\n  return {\n    statusCode: 200,\n    body: JSON.stringify({ message: \"Hello World\" }),\n  };\n};\n\nexport { handler };\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA;AAAA;AAEA,IAAM,UAAmB,OAAO,OAAO,YAAY;AACjD,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU,EAAE,SAAS;AAAA;AAAA;",
+  "names": []
+}
