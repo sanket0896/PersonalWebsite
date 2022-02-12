@@ -53,3 +53,8 @@ body {
 .centred-content-container {
   padding: var(--spacing-s3) var(--spacing-s10);
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
