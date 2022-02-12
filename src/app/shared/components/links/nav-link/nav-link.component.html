@@ -1,8 +1,7 @@
 <div
   class="nav-link no-outline border-bottom-reveal"
   [routerLink]="[link]"
-  routerLinkActive="link-active"
-  [routerLinkActiveOptions]="routerLinkActiveOptions"
+  [class.link-active]="isActive"
 >
   <ng-content></ng-content>
 </div>
