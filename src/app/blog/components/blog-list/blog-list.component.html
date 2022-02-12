@@ -1,0 +1,9 @@
+<div class="blog-container centred-content-container">
+  <app-blog-entry *ngFor="let project of blogList$ | async" [blog]="project">
+  </app-blog-entry>
+  <div class="list-end">
+    <hr />
+    <span>That's all for now. More blogs coming soon!</span>
+    <hr />
+  </div>
+</div>

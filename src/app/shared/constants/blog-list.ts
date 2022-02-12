@@ -6,7 +6,7 @@ export const BLOG_LIST: BlogDetail[] = [
     description: `It is a real time chat application with features like private chats,
     typing indicator and read receipts`,
     creationDate: new Date("2021-11-08"),
-    content: "Hello World!",
+    url: "Hello World!",
     tags: [{ name: "React" }, { name: "ExpressJs" }, { name: "SocketIO" }],
   },
   {
@@ -14,7 +14,7 @@ export const BLOG_LIST: BlogDetail[] = [
     description: `It is a real time chat application with features like private chats,
     typing indicator and read receipts`,
     creationDate: new Date("2021-12-18"),
-    content: "Hello World!",
+    url: "Hello World!",
     tags: [{ name: "React" }, { name: "SocketIO" }],
   },
   {
@@ -22,7 +22,7 @@ export const BLOG_LIST: BlogDetail[] = [
     description: `It is a real time chat application with features like private chats,
     typing indicator and read receipts`,
     creationDate: new Date("2022-01-03"),
-    content: "Hello World!",
+    url: "Hello World!",
     tags: [{ name: "SocketIO" }],
   },
   {
@@ -30,7 +30,7 @@ export const BLOG_LIST: BlogDetail[] = [
     description: `It is a real time chat application with features like private chats,
     typing indicator and read receipts`,
     creationDate: new Date("2022-03-15"),
-    content: "Hello World!",
+    url: "Hello World!",
     tags: [
       { name: "React" },
       { name: "Redux" },

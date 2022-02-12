@@ -4,12 +4,6 @@ import { BlogComponent } from "./blog/blog.component";
 
 const routes: Routes = [
   {
-    path: "",
-    pathMatch: "full",
-    loadChildren: () =>
-      import("./landing/landing.module").then(m => m.LandingModule),
-  },
-  {
     path: "projects",
     loadChildren: () =>
       import("./projects/projects.module").then(m => m.ProjectsModule),
@@ -19,10 +13,16 @@ const routes: Routes = [
     component: BlogComponent,
     loadChildren: () => import("./blog/blog.module").then(m => m.BlogModule),
   },
+  {
+    path: "",
+    pathMatch: "full",
+    loadChildren: () =>
+      import("./landing/landing.module").then(m => m.LandingModule),
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: "legacy" })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
