@@ -10,6 +10,8 @@ export class SimpleCardComponent {
   @Input()
   heading: string;
   @Input()
+  headingUrl: string;
+  @Input()
   body: string;
   @Input()
   tags: TagBase[];

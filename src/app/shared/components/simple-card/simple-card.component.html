@@ -1,7 +1,13 @@
 <div class="card">
-  <app-simple-link>
-    <div class="title border-bottom-reveal">{{ heading }}</div>
-  </app-simple-link>
+  <div class="title">
+    <ng-container *ngIf="!!headingUrl; else textHeading">
+      <app-simple-router-link [url]="headingUrl">
+        <span class="border-bottom-reveal">{{
+          heading
+        }}</span></app-simple-router-link
+      >
+    </ng-container>
+  </div>
   <div class="description">{{ body }}</div>
   <div class="tags">
     <app-simple-tag
@@ -11,3 +17,7 @@
     ></app-simple-tag>
   </div>
 </div>
+
+<ng-template #textHeading>
+  <span>{{ heading }}</span>
+</ng-template>
