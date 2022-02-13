@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~prismjs/themes/prism-tomorrow";
+@import "./app/shared/styles/prism-theme.scss";
 
 * {
   box-sizing: border-box;
@@ -60,4 +60,8 @@ body {
 a {
   text-decoration: none;
   color: var(--color-primary);
+}
+
+.syntax-highlight {
+  @include prism-theme();
 }
